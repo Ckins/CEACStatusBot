@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: '0 13 * * *'
+    - cron: '30 13 * * *' # 我稍微改了下时间，避开整点，减少排队延迟
 
 jobs:
   build:
